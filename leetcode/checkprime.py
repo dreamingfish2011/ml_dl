@@ -19,11 +19,11 @@ def is_prime(n):
 
 
 def get_two_factors(multi):
-    for i in range(1, int(sqrt(multi) + 1)):
+    for i in range(2, int(sqrt(multi) + 1)):
         if is_prime(i) and multi % i == 0 and is_prime(int(multi / i)):
             return i, int(multi / i)
     return 0, 0
 
 
 if __name__ =='__main__':
-    print(get_two_factors(707829217))
+    print(get_two_factors(15))
