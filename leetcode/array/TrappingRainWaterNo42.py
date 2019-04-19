@@ -1,3 +1,4 @@
+#similar:No11,No42,No84
 class Solution:
     def trap(self, height) -> int:
         if len(height) <=2 :
